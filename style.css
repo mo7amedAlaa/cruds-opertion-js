@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --main-bg: #222;
+  --second-bg: #111;
+  --main-color: #fff;
+  --second-color: #310044;
+}
+body {
+  background-color: var(--main-bg);
+  color: var(--main-color);
+  font-family: system-ui;
+}
+.crud {
+  width: 80%;
+  margin: auto;
+}
+.head {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+input {
+  color: var(--main-color);
+  width: 100%;
+  height: 30px;
+  margin: 4px 0;
+  background-color: var(--second-bg);
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  padding: 4px;
+}
+input:focus {
+  background-color: black;
+  transform: scale(1.1);
+}
+.price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4px;
+}
+#total {
+  background-color: #a00d02;
+  padding: 4px 2px;
+  border-radius: 4px;
+}
+#total::before {
+  content: 'Total:';
+  margin-right: 3px;
+}
+button {
+  width: 100%;
+  height: 30px;
+  border: none;
+  background-color: var(--second-color);
+  cursor: pointer;
+  color: var(--main-color);
+  border-radius: 20px;
+  transition: 0.5s;
+}
+button:hover {
+  background-color: #51025f;
+  letter-spacing: 1px;
+}
+.btnSearch {
+  display: flex;
+  justify-content: space-between;
+}
+.btnSearch button {
+  width: 45%;
+}
+table {
+  width: 100%;
+  text-align: center;
+  margin: 10px 0;
+}
+table th {
+  text-transform: uppercase;
+}
+th,
+td {
+  padding: 5px;
+}
+#deleteall {
+  margin: 10px 0;
+}
